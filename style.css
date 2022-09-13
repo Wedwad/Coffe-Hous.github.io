@@ -8,7 +8,7 @@
 	box-sizing: border-box;
 }
 #Header {
-	width: 1440px;
+	width: 100%;
 	margin: auto;
 }
 .container {
@@ -45,7 +45,7 @@
 
 #Hero {
 	height: 622px;
-	width: 1440px;
+	width: 100%;
 	margin: auto;
 	background-image: url(img/Header/hero.jpg);
 	background-repeat: no-repeat;
@@ -73,7 +73,7 @@
 
 
 #Story {
-	width: 1440px;
+	width: 100%;
 	margin: auto;
 }
 .story {
@@ -110,7 +110,7 @@
 
 
 #Blog {
-	width: 1440px;
+	width: 100%;
 	margin: auto;
 	background-color: #EFEFEF;
 }
@@ -154,7 +154,7 @@
 
 
 #Contact {
-	width: 1440px;
+	width: 100%;
 	margin: auto;
 	background-color: #817070;
 }
@@ -211,7 +211,7 @@
 
 
 #Footer {
-	width: 1440px;
+	width: 100%;
 	margin: auto;
 }
 .footer {
