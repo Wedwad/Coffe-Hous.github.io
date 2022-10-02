@@ -7,221 +7,73 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-#Header {
-	width: 100%;
-	margin: auto;
+a {
+	text-decoration: none;
 }
 .container {
-	width: 1280px;
+	max-width: 1280px;
+	height: 100%;
 	margin: auto;
 }
+/*///////////////////////////////////////////*/
+
+#Header {
+	width: 100%;
+	height: 15vh;
+}
 .header {
-	height: 110px;
+	height: 100%;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 }
-.header-img {
+.header__logo {
 	display: block;
+	height: 30px;
 }
-.header-links {
+.nav {}
+.nav__items {
 	font-family: 'Oswald', sans-serif;
 	font-size: 24px;
 	font-weight: 300;
-	color: #232323;
-	text-decoration: none;
-	transition: .2s;
+	color: black;
 }
-.header-links + .header-links {
+.nav__items + .nav__items {
 	margin-left: 46px;
 }
-.header-links:hover {
-	color: #000;
-}
-
-
-/*//////////////////////////////////////////////////////////////*/
-
-
-#Hero {
-	height: 622px;
-	width: 100%;
-	margin: auto;
-	background-image: url(img/Header/hero.jpg);
+.hero {
+	height: 85vh;
+	background-image: url(img/header/hero-backg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 }
-.hero-h1 {
+.hero_header {
 	font-family: 'Oswald', sans-serif;
 	font-size: 60px;
 	font-weight: 700;
-	color: #fff;
+	color: white;
+	position: relative;
 }
-.hero-hr {
-	border-color: #817070;
-	border-top-width: 10px;
-	border-style: solid;
-	width: 80px;
-	margin: auto;
-}
-
-
-/*//////////////////////////////////////////////////////////////*/
-
-
-#Story {
-	width: 100%;
-	margin: auto;
-}
-.story {
-	padding: 60px 0;
-}
-.story-h2 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 36px;
-	font-weight: 500;
-	color: #000;
-	text-align: center;
-}
-.story_figure {
-	margin-top: 60px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.story_figure-img {
-	height: 400px;
-}
-.story_figcapt {
-	width: 597px;
-}
-.story_figcapt-descr {
-	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
-	font-weight: 300;
-	color: #000;
-}
-
-
-/*//////////////////////////////////////////////////////////////*/
-
-
-#Blog {
-	width: 100%;
-	margin: auto;
-	background-color: #EFEFEF;
-}
-.blog {
-	padding: 60px 0;
-}
-.blog-h2 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 36px;
-	font-weight: 500;
-	color: #000;
-	text-align: center;
-}
-.blog_box {
-	margin-top: 60px;
-	display: flex;
-	justify-content: space-between;
-}
-.blog_figure {
-	background-color: white;
-	padding: 20px;
-	width: 365px;
-}
-.blog_figure-img {
-	width: 325px;
-	display: block;
-	margin: auto;
-}
-.blog_figcapt {
-	margin-top: 24px;
-}
-.blog_figcapt-descr {
-	font-family: 'Oswald', sans-serif;
-	font-size: 18px;
-	font-weight: 300;
-	color: #000;
-}
-
-
-/*//////////////////////////////////////////////////////////////*/
-
-
-#Contact {
-	width: 100%;
-	margin: auto;
+.hero_header::after {
+	content: '';
+	position: absolute;
+	top: 96px;
+	left: 158px;
 	background-color: #817070;
+	width: 80px;
+	height: 10px;
 }
-.contact {
-	padding: 60px 0;
-}
-.contact-h2 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 36px;
-	font-weight: 500;
-	color: #fff;
-	text-align: center;
-}
-.contact_form {
-	margin-top: 28px;
-}
-.contact_form-input {
-	border: 3px solid white;
-	background-color: transparent;
-	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
-	font-weight: 300;
-	color: white;
-	display: block;
-	width: 300px;
-	padding: 12.5px 0;
-	margin: auto;
-	text-align: center;
-	outline: none;
-}
-.contact_form-input::placeholder {
-	color: white;
-}
-.contact_form-submit {
-	display: block;
-	width: 130px; 
-	margin: 28px auto 0;
-	padding: 12.5px 0;
-	text-align: center;
-	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
-	font-weight: 500;
-	color: #817070;
-	border: none;
-	cursor: pointer;
-	transition: .2s;
-}
-.contact_form-submit:hover {
-	background-color: transparent;
-	color: white;
+/*///////////////////////////////////////////*/
+
+#Main {
+	width: 100%;
 }
 
-/*//////////////////////////////////////////////////////////////*/
-
+/*///////////////////////////////////////////*/
 
 #Footer {
 	width: 100%;
-	margin: auto;
-}
-.footer {
-	text-align: center;
-	padding: 21px 0;
-	cursor: default;
-}
-.footer-text {
-	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
-	font-weight: 300;
-	color: #000;
 }
